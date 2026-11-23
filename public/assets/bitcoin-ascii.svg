@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 210" fill="none">
+  <style>
+    text { font-family: Menlo, Consolas, monospace; }
+    .face { fill: #938133; }
+    .edge { fill: #be9f28; }
+    .rim { fill: #f6cd39; }
+    .glyph { fill: #fff06a; font-weight: bold; }
+    #spin:target .coin-face {
+      animation: flip 4s linear infinite;
+    }
+    @keyframes flip {
+      from { transform: perspective(650px) rotateY(0turn); }
+      to { transform: perspective(650px) rotateY(1turn); }
+    }
+  </style>
+  <defs>
+    <pattern id="milled-edge" width="12" height="5" patternUnits="userSpaceOnUse">
+      <rect width="12" height="5" fill="#30270e"/>
+      <text x="0" y="4" class="rim" font-size="5">//|/</text>
+    </pattern>
+    <g id="coin" font-size="5.35">
+      <ellipse rx="80" ry="77" fill="#17170f"/>
+      <text y="-78"><tspan class="rim" x="0.0">#</tspan></text>
+      <text y="-72"><tspan class="rim" x="-28.8">#+#+#+#+#+#+#+#+#+#</tspan></text>
+      <text y="-66"><tspan class="rim" x="-41.6">+#+#+</tspan><tspan class="edge" x="-25.6">=:=:=:=:=:=:=:=:=</tspan><tspan class="rim" x="28.8">+#+#+</tspan></text>
+      <text y="-60"><tspan class="rim" x="-48.0">#+#</tspan><tspan class="edge" x="-38.4">:=:=:=:</tspan><tspan class="rim" x="-16.0">...........</tspan><tspan class="edge" x="19.2">:=:=:=:</tspan><tspan class="rim" x="41.6">#+#</tspan><tspan class="edge" x="51.2">/</tspan></text>
+      <text y="-54"><tspan class="rim" x="-57.6">#+#+</tspan><tspan class="edge" x="-44.8">=:=:</tspan><tspan class="rim" x="-32.0">....</tspan><tspan class="face" x="-19.2">:..:..:..:..:</tspan><tspan class="rim" x="22.4">....</tspan><tspan class="edge" x="35.2">:=:=</tspan><tspan class="rim" x="48.0">+#+#</tspan></text>
+      <text y="-48"><tspan class="rim" x="-60.8">#+#</tspan><tspan class="edge" x="-51.2">:=:=</tspan><tspan class="rim" x="-38.4">..</tspan><tspan class="face" x="-32.0">:..:</tspan><tspan class="glyph" x="-19.2">###</tspan><tspan class="face" x="-9.6">..:</tspan><tspan class="glyph" x="0.0">###</tspan><tspan class="face" x="9.6">..:..:..</tspan><tspan class="rim" x="35.2">..</tspan><tspan class="edge" x="41.6">=:=:</tspan><tspan class="rim" x="54.4">#+#</tspan><tspan class="edge" x="64.0">/|</tspan></text>
+      <text y="-42"><tspan class="rim" x="-67.2">+#+</tspan><tspan class="edge" x="-57.6">=:=:</tspan><tspan class="rim" x="-44.8">..</tspan><tspan class="face" x="-38.4">.:..:.</tspan><tspan class="glyph" x="-19.2">###</tspan><tspan class="face" x="-9.6">.:.</tspan><tspan class="glyph" x="0.0">###</tspan><tspan class="face" x="9.6">.:..:..:..</tspan><tspan class="rim" x="41.6">..</tspan><tspan class="edge" x="48.0">:=:=</tspan><tspan class="rim" x="60.8">+#+</tspan><tspan class="edge" x="70.4">|</tspan></text>
+      <text y="-36"><tspan class="rim" x="-70.4">+#+</tspan><tspan class="edge" x="-60.8">=:=</tspan><tspan class="rim" x="-51.2">..</tspan><tspan class="face" x="-44.8">..:..</tspan><tspan class="glyph" x="-28.8">###############</tspan><tspan class="face" x="19.2">:..:..:..</tspan><tspan class="rim" x="48.0">..</tspan><tspan class="edge" x="54.4">=:=</tspan><tspan class="rim" x="64.0">+#+</tspan><tspan class="edge" x="73.6">|/</tspan></text>
+      <text y="-30"><tspan class="rim" x="-73.6">+#+</tspan><tspan class="edge" x="-64.0">=:=</tspan><tspan class="rim" x="-54.4">..</tspan><tspan class="face" x="-48.0">..:..:</tspan><tspan class="glyph" x="-28.8">##################</tspan><tspan class="face" x="28.8">..:..:.</tspan><tspan class="rim" x="51.2">..</tspan><tspan class="edge" x="57.6">=:=</tspan><tspan class="rim" x="67.2">+#+</tspan><tspan class="edge" x="76.8">|/</tspan></text>
+      <text y="-24"><tspan class="rim" x="-73.6">#+</tspan><tspan class="edge" x="-67.2">=:=</tspan><tspan class="rim" x="-57.6">..</tspan><tspan class="face" x="-51.2">..:..:..:.</tspan><tspan class="glyph" x="-19.2">####</tspan><tspan class="face" x="-6.4">:..:..:</tspan><tspan class="glyph" x="16.0">######</tspan><tspan class="face" x="35.2">..:..:</tspan><tspan class="rim" x="54.4">..</tspan><tspan class="edge" x="60.8">=:=</tspan><tspan class="rim" x="70.4">+#</tspan><tspan class="edge" x="76.8">/|/</tspan></text>
+      <text y="-18"><tspan class="rim" x="-76.8">#+</tspan><tspan class="edge" x="-70.4">=:=</tspan><tspan class="rim" x="-60.8">..</tspan><tspan class="face" x="-54.4">..:..:..:..</tspan><tspan class="glyph" x="-19.2">####</tspan><tspan class="face" x="-6.4">..:..:.</tspan><tspan class="glyph" x="16.0">######</tspan><tspan class="face" x="35.2">.:..:..</tspan><tspan class="rim" x="57.6">..</tspan><tspan class="edge" x="64.0">=:=</tspan><tspan class="rim" x="73.6">+#</tspan><tspan class="edge" x="80.0">/|</tspan></text>
+      <text y="-12"><tspan class="rim" x="-76.8">+#</tspan><tspan class="edge" x="-70.4">:=:</tspan><tspan class="rim" x="-60.8">.</tspan><tspan class="face" x="-57.6">..:..:..:..:</tspan><tspan class="glyph" x="-19.2">####</tspan><tspan class="face" x="-6.4">.:..:..</tspan><tspan class="glyph" x="16.0">####</tspan><tspan class="face" x="28.8">..:..:..:.</tspan><tspan class="rim" x="60.8">.</tspan><tspan class="edge" x="64.0">:=:</tspan><tspan class="rim" x="73.6">#+</tspan><tspan class="edge" x="80.0">|/|</tspan></text>
+      <text y="-6"><tspan class="rim" x="-76.8">#+</tspan><tspan class="edge" x="-70.4">=:=</tspan><tspan class="rim" x="-60.8">.</tspan><tspan class="face" x="-57.6">.:..:..:..:.</tspan><tspan class="glyph" x="-19.2">##############</tspan><tspan class="face" x="25.6">..:..:..:..</tspan><tspan class="rim" x="60.8">.</tspan><tspan class="edge" x="64.0">=:=</tspan><tspan class="rim" x="73.6">+#</tspan><tspan class="edge" x="80.0">/|/</tspan></text>
+      <text y="0"><tspan class="rim" x="-80.0">#+#</tspan><tspan class="edge" x="-70.4">:=</tspan><tspan class="rim" x="-64.0">..</tspan><tspan class="face" x="-57.6">:..:..:..:..</tspan><tspan class="glyph" x="-19.2">#################</tspan><tspan class="face" x="35.2">.:..:..:</tspan><tspan class="rim" x="60.8">..</tspan><tspan class="edge" x="67.2">=:</tspan><tspan class="rim" x="73.6">#+#</tspan><tspan class="edge" x="83.2">/|</tspan></text>
+      <text y="6"><tspan class="rim" x="-76.8">#+</tspan><tspan class="edge" x="-70.4">=:=</tspan><tspan class="rim" x="-60.8">.</tspan><tspan class="face" x="-57.6">..:..:..:..:</tspan><tspan class="glyph" x="-19.2">####</tspan><tspan class="face" x="-6.4">.:..:..:</tspan><tspan class="glyph" x="19.2">######</tspan><tspan class="face" x="38.4">..:..:.</tspan><tspan class="rim" x="60.8">.</tspan><tspan class="edge" x="64.0">=:=</tspan><tspan class="rim" x="73.6">+#</tspan><tspan class="edge" x="80.0">/|/|</tspan></text>
+      <text y="12"><tspan class="rim" x="-76.8">+#</tspan><tspan class="edge" x="-70.4">:=:</tspan><tspan class="rim" x="-60.8">.</tspan><tspan class="face" x="-57.6">.:..:..:..:.</tspan><tspan class="glyph" x="-19.2">####</tspan><tspan class="face" x="-6.4">:..:..:.</tspan><tspan class="glyph" x="19.2">######</tspan><tspan class="face" x="38.4">.:..:..</tspan><tspan class="rim" x="60.8">.</tspan><tspan class="edge" x="64.0">:=:</tspan><tspan class="rim" x="73.6">#+</tspan><tspan class="edge" x="80.0">|/|</tspan></text>
+      <text y="18"><tspan class="rim" x="-76.8">#+</tspan><tspan class="edge" x="-70.4">=:=</tspan><tspan class="rim" x="-60.8">..</tspan><tspan class="face" x="-54.4">..:..:..:..</tspan><tspan class="glyph" x="-19.2">####</tspan><tspan class="face" x="-6.4">..:..:..</tspan><tspan class="glyph" x="19.2">#####</tspan><tspan class="face" x="35.2">.:..:..</tspan><tspan class="rim" x="57.6">..</tspan><tspan class="edge" x="64.0">=:=</tspan><tspan class="rim" x="73.6">+#</tspan><tspan class="edge" x="80.0">/|/</tspan></text>
+      <text y="24"><tspan class="rim" x="-73.6">#+</tspan><tspan class="edge" x="-67.2">=:=</tspan><tspan class="rim" x="-57.6">..</tspan><tspan class="face" x="-51.2">:..:..:</tspan><tspan class="glyph" x="-28.8">##################</tspan><tspan class="face" x="28.8">..:..:..</tspan><tspan class="rim" x="54.4">..</tspan><tspan class="edge" x="60.8">=:=</tspan><tspan class="rim" x="70.4">+#</tspan><tspan class="edge" x="76.8">/|/|</tspan></text>
+      <text y="30"><tspan class="rim" x="-73.6">+#+</tspan><tspan class="edge" x="-64.0">=:=</tspan><tspan class="rim" x="-54.4">..</tspan><tspan class="face" x="-48.0">.:..:.</tspan><tspan class="glyph" x="-28.8">###############</tspan><tspan class="face" x="19.2">.:..:..:..</tspan><tspan class="rim" x="51.2">..</tspan><tspan class="edge" x="57.6">=:=</tspan><tspan class="rim" x="67.2">+#+</tspan><tspan class="edge" x="76.8">|/|</tspan></text>
+      <text y="36"><tspan class="rim" x="-70.4">+#+</tspan><tspan class="edge" x="-60.8">=:=</tspan><tspan class="rim" x="-51.2">..</tspan><tspan class="face" x="-44.8">..:..:..</tspan><tspan class="glyph" x="-19.2">###</tspan><tspan class="face" x="-9.6">:..</tspan><tspan class="glyph" x="0.0">###</tspan><tspan class="face" x="9.6">:..:..:..:..</tspan><tspan class="rim" x="48.0">..</tspan><tspan class="edge" x="54.4">=:=</tspan><tspan class="rim" x="64.0">+#+</tspan><tspan class="edge" x="73.6">|/|/</tspan></text>
+      <text y="42"><tspan class="rim" x="-67.2">+#+</tspan><tspan class="edge" x="-57.6">=:=:</tspan><tspan class="rim" x="-44.8">..</tspan><tspan class="face" x="-38.4">..:..:</tspan><tspan class="glyph" x="-19.2">###</tspan><tspan class="face" x="-9.6">..:</tspan><tspan class="glyph" x="0.0">###</tspan><tspan class="face" x="9.6">..:..:..:.</tspan><tspan class="rim" x="41.6">..</tspan><tspan class="edge" x="48.0">:=:=</tspan><tspan class="rim" x="60.8">+#+</tspan><tspan class="edge" x="70.4">|/|/</tspan></text>
+      <text y="48"><tspan class="rim" x="-60.8">#+#</tspan><tspan class="edge" x="-51.2">:=:=</tspan><tspan class="rim" x="-38.4">..</tspan><tspan class="face" x="-32.0">..:..:..:..:..:..:..:</tspan><tspan class="rim" x="35.2">..</tspan><tspan class="edge" x="41.6">=:=:</tspan><tspan class="rim" x="54.4">#+#</tspan><tspan class="edge" x="64.0">/|/|/</tspan></text>
+      <text y="54"><tspan class="rim" x="-57.6">#+#+</tspan><tspan class="edge" x="-44.8">=:=:</tspan><tspan class="rim" x="-32.0">....</tspan><tspan class="face" x="-19.2">:..:..:..:..:</tspan><tspan class="rim" x="22.4">....</tspan><tspan class="edge" x="35.2">:=:=</tspan><tspan class="rim" x="48.0">+#+#</tspan><tspan class="edge" x="60.8">/|/|</tspan></text>
+      <text y="60"><tspan class="rim" x="-48.0">#+#</tspan><tspan class="edge" x="-38.4">:=:=:=:</tspan><tspan class="rim" x="-16.0">...........</tspan><tspan class="edge" x="19.2">:=:=:=:</tspan><tspan class="rim" x="41.6">#+#</tspan><tspan class="edge" x="51.2">/|/|/|</tspan></text>
+      <text y="66"><tspan class="rim" x="-41.6">+#+#+</tspan><tspan class="edge" x="-25.6">=:=:=:=:=:=:=:=:=</tspan><tspan class="rim" x="28.8">+#+#+</tspan><tspan class="edge" x="44.8">|/|/|</tspan></text>
+      <text y="72"><tspan class="edge" x="-32.0">/</tspan><tspan class="rim" x="-28.8">#+#+#+#+#+#+#+#+#+#</tspan><tspan class="edge" x="32.0">/|/|/|/</tspan></text>
+      <text y="78"><tspan class="edge" x="-19.2">|/|/|/</tspan><tspan class="rim" x="0.0">#</tspan><tspan class="edge" x="3.2">/|/|/|/|/|/|</tspan></text>
+    </g>
+  </defs>
+  <g id="spin" transform="translate(230 106)">
+    <g transform="rotate(-12)" stroke="#a18b36">
+      <ellipse rx="208" ry="32" stroke-dasharray="1 5" opacity=".62"/>
+      <ellipse rx="174" ry="26" stroke-dasharray="6 9 1 9" opacity=".24"/>
+      <path d="M-208 -3v6m-3 -3h6M208 -3v6m-3 -3h6"/>
+    </g>
+    <g transform="rotate(-15)">
+      <rect x="-6" y="-78" width="12" height="157" rx="5" fill="url(#milled-edge)"/>
+      <g class="coin-face"><use href="#coin"/></g>
+    </g>
+  </g>
+  <g stroke="#897738" opacity=".8">
+    <path d="M26 60h7m-3.5 -3.5v7M388 158h7m-3.5 -3.5v7M383 35h5m-2.5 -2.5v5M99 156h5m-2.5 -2.5v5"/>
+  </g>
+</svg>

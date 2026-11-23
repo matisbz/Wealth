@@ -1,0 +1,14 @@
+.wealth/
+.env*
+*.pem
+*.vault
+*.key
+*.p12
+*.pfx
+*.crt
+*.log
+.DS_Store
+node_modules/
+/.agents/
+/propuesta-*
+/vista-previa.jpg
