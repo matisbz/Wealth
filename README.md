@@ -2,11 +2,6 @@
 
 Panel local de cuentas personales de MyInvestor, Trade Republic, Santander y Revolut en España. La portada muestra datos ficticios hasta que configuras Enable Banking o guardas la primera consulta a MyInvestor. Los saldos reales se agrupan por divisa y el gráfico conserva los saldos observados en cada actualización. El historial de movimientos contables abarca hasta 90 días, según lo que comunique cada entidad.
 
-## Arranque
-
-En este Mac, pulsa **Wealth** en el Dock. El lanzador de la carpeta de aplicaciones del usuario inicia el servidor cuando hace falta y abre el panel en el navegador predeterminado. También funciona después de reiniciar el Mac.
-
-Con Node.js 22 o posterior instalado, ejecuta `npm start` desde esta carpeta y abre [Wealth](http://127.0.0.1:4317). No necesita instalar dependencias. Usa `npm test` para ejecutar las pruebas con respuestas del proveedor simuladas.
 
 ## Consultar MyInvestor desde Wealth
 
@@ -17,15 +12,6 @@ Con Node.js 22 o posterior instalado, ejecuta `npm start` desde esta carpeta y a
 
 Wealth envía las credenciales directamente desde su servidor local a `https://api.myinvestor.es`. La contraseña, el código SMS y los tokens bancarios se usan en memoria. La sesión de acceso solo sirve para esa consulta. Cada actualización directa requiere que inicies sesión. La tarea semanal omite esta conexión porque el inicio de sesión es puntual. Esta conexión utiliza la interfaz de clientes del banco y puede necesitar adaptaciones si MyInvestor la cambia.
 
-## Fondos de MyInvestor
-
-En **Resumen → MyInvestor** puedes ver las participaciones guardadas, su valoración y el efectivo. Pulsa **Consultar MyInvestor** para obtener los datos del banco.
-
-La lista de fondos procede de las posiciones que comunica el banco para cada perfil.
-
-Wealth obtiene el valor liquidativo en euros y las participaciones de la misma respuesta de posiciones de MyInvestor. Al guardar la consulta, multiplica ambos datos para valorar cada fondo. Si el banco omite el precio en euros o su divisa para un fondo con participaciones, la valoración de ese fondo y el total quedan pendientes. La fecha de consulta indica cuándo se leyeron las posiciones. La fecha del valor liquidativo solo se muestra cuando la facilita MyInvestor.
-
-Las participaciones y las observaciones históricas anteriores siguen guardadas. Para valorar una cartera anterior con precios del banco, realiza una nueva consulta y confirma el resultado.
 
 ## Conectar Santander, Revolut y Trade Republic
 
@@ -39,11 +25,6 @@ El acceso cubre las cuentas y los saldos que cada banco publica mediante AIS. Pu
 
 El retorno bancario utiliza un segundo puerto local con HTTPS. Antes de autorizar el primer banco en macOS, abre [Confiar en Wealth](macos/Confiar%20en%20Wealth.command) para confiar en el certificado del servidor local desde tu llavero de usuario. El certificado es específico de 127.0.0.1 y válido durante un año.
 
-## Deudas del colchón de emergencia
-
-Las salidas contabilizadas de Trade Republic desde el 1 de noviembre de 2026 se registran en **Deudas**. Wealth incorpora los movimientos ya guardados y consulta los nuevos al sincronizar la entidad y durante la actualización de los lunes. Cada salida aparece en el mes siguiente al cargo. La deuda pendiente se conserva aunque el movimiento deje de aparecer en el banco o se desvincule la entidad.
-
-En **Deudas**, selecciona el mes de reposición. Una vez hecha la transferencia desde ocio, pulsa **Pago total** para registrar todo el pendiente o **Pago parcial** para indicar el importe transferido. En un pago parcial, el resto se suma a la reposición del mes siguiente en la misma divisa. El historial muestra cuánto pagaste y cuánto se trasladó al mes siguiente.
 
 ## Datos locales
 
